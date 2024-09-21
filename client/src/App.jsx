@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className="lg:w-[32rem] lg:h-[24rem]">
+      <div className="lg:w-[38rem] lg:h-[24rem] md:w-90%">
         <p>devrepofinder</p>
 
         <div className="bg-blue-950 flex flex-row items-center justify-between py-1 px-2 rounded-lg">
@@ -23,19 +23,19 @@ function App() {
           <button className="py-2 bg-sky-500 text-white px-5">Search</button>
         </div>
 
-        <div className="flex flex-row bg-blue-950 text-slate-100 mt-5 rounded-lg py-5 px-10">
-          <div className="w-1/5">
+        <div className="bg-blue-950 text-slate-100 mt-5 rounded-lg py-5 px-10">
+          <div className="flex flex-row items-center">
             <img src='' className="h-20 w-20 bg-black rounded-full"/>
-          </div>
-          <div className="w-4/5 ml-10">
-            <div className="lg:flex lg:flex-row justify-between">
-              <div>
+            <div className="lg:flex lg:flex-row justify-between w-full ml-10">
+              <div className="">
                 <p className="text-xl text-start">name</p>
-                <p className="text-stone-950">username</p>
+                <p className="text-stone-950 text-start">username</p>
               </div>
-              <p>Joined Date</p>
+              <p className="text-start">Joined Date</p>
             </div>
-            <p className="text-start text-wrap mt-2">this the paragraph bio</p>
+          </div>
+          <div className="lg:ml-[120px] lg:mt-0 sm:mt-5">
+            <p className="text-start text-wrap">this the paragraph bio</p>
 
             <div className="flex flex-row bg-cyan-800 justify-between p-3 rounded-xl text-white my-3">
               <div>
@@ -51,7 +51,7 @@ function App() {
                 <span className="text-sm">800</span>
               </div>
             </div>
-            <div className="flex lg:flex-row">
+            <div className="md:flex md:flex-row pr-10 justify-between">
             <div>
               <div  className="flex flex items-center">
                 <CiLocationOn className="mr-2" />
@@ -63,7 +63,7 @@ function App() {
               </div>
 
             </div>
-            <div className="lg:ml-10">
+            <div className="">
               <div className="flex flex items-center">
                 <FiTwitter className="mr-2" />
                <p>twitter</p>
